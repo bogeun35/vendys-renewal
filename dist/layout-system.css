@@ -1,0 +1,144 @@
+/* One content axis; section backgrounds stay full bleed. */
+.solution-tabs .tab-short{display:none}
+.solution-tabs .tab-full{font:inherit;padding:0}
+@media(max-width:760px){.solution-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;border:0}.solution-tabs button{padding:12px 10px;border:1px solid #dfe8e1;border-radius:8px;min-height:46px;background:#f3f7f3}.solution-tabs button:first-child{grid-column:1/-1}.solution-tabs button[aria-pressed=true]{background:#123826;color:#fff;border-color:#123826}.solution-tabs .tab-full{display:none}.solution-tabs .tab-short{display:inline;font:inherit;padding:0}}
+:root{--content-width:1280px;--content-edge:max(24px,calc((100% - 1280px)/2));--section-space:104px}
+body>header{padding-inline:var(--content-edge)}
+.mega-panel{left:var(--content-edge);right:var(--content-edge)}
+.section,.crumb,.detail-hero,.page-intro,.special-section,.special-section:nth-child(even),.service-cases,.real-product,.detail-cta,.site-footer,.benefit-ribbon,
+.renewal-hero,.product-story,.operations-story,.solution-hub,.voices-section,.editorial-section,.renewal-cta{width:100%;max-width:none;margin-inline:0;padding-inline:var(--content-edge);box-sizing:border-box}
+.section,.special-section,.service-cases,.real-product,.product-story,.operations-story,.solution-hub,.voices-section,.editorial-section{padding-block:var(--section-space)}
+.proof-strip{width:calc(100% - 48px);max-width:var(--content-width);margin-inline:auto;box-sizing:border-box}
+.proof-strip span{word-break:keep-all;overflow-wrap:break-word}
+.renewal-hero{padding-block:64px;gap:40px}
+.hero-ticket>span,.hero-benefit>span,.hero-gift>span{display:none}
+.hero-ticket i,.hero-benefit i,.hero-gift i{grid-row:auto}
+.detail-hero{gap:64px;padding-block:56px 88px}
+.page-intro{padding-block:72px 24px}
+.crumb{padding-block:26px 0}
+.detail-subnav{padding-inline:var(--content-edge)}
+.inquiry-choices,.form-layout,.calculator-layout,.editorial-list{padding-top:32px}
+.section.article-body{width:min(800px,calc(100% - 48px));max-width:none;padding-inline:0;padding-top:32px;margin-left:var(--content-edge);margin-right:auto}
+.day-story-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}
+.day-story-visual{height:auto;align-self:start;overflow:hidden}
+.day-scene{height:auto}
+.day-scene img{display:block;width:100%;height:auto;aspect-ratio:800/511;object-fit:contain;background:#edf5e8}
+.day-scene:after{display:none}
+.day-scene>div{position:static;padding:24px 28px;background:#123826;color:#fff}
+.day-scene strong{margin-top:8px}
+.operations-story{grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);gap:64px}
+.voice-grid,.resource-editorial-grid,.journal-grid{gap:32px}
+.solution-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.solution-card{min-height:250px;padding:28px 24px}
+.form-layout{grid-template-columns:minmax(0,.38fr) minmax(0,1fr);gap:64px}
+.renewal-hero>*,.detail-hero>*,.day-story-grid>*,.operations-story>*,.form-layout>*,.calculator-layout>*,.company-value>*,.resource-editorial-grid>*{min-width:0}
+.site-footer{padding-block:56px 24px}
+.renewal-cta{padding-block:80px}
+@media(max-width:1100px){
+  :root{--section-space:80px}
+  .renewal-hero,.detail-hero,.day-story-grid,.operations-story{gap:32px}
+  .renewal-hero{padding-block:48px}
+  .solution-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .form-layout{grid-template-columns:1fr;gap:28px}
+  .form-layout aside{position:static}
+}
+@media(max-width:760px){
+  :root{--section-space:64px}
+  body>header{gap:10px}
+  .mega-panel{left:auto;right:auto}
+  .renewal-hero{grid-template-columns:1fr;padding-block:40px;gap:36px;min-height:0}
+  .hero-product{margin-inline:0}
+  .hero-ticket{left:-8px}.hero-benefit{right:-8px}.hero-gift{left:-4px}
+  .detail-hero{grid-template-columns:1fr;padding-block:32px 56px;gap:32px}
+  .page-intro{padding-block:44px 20px}
+  .crumb{padding-block:22px 0}
+  .proof-strip{gap:24px 8px}
+  .proof-strip>div{padding-left:8px}
+  .story-introduction{margin-bottom:32px}
+  .day-story-grid,.operations-story{grid-template-columns:1fr;gap:32px}
+  .day-story-visual{position:relative;top:auto;height:auto}
+  .day-scene>div{padding:20px 22px}
+  .day-chapter>p{max-width:none}
+  .operations-points{grid-template-columns:1fr;gap:20px}
+  .operations-points p{gap:5px;padding-top:16px;border-top:1px solid #42604d}
+  .solution-grid{grid-template-columns:1fr}
+  .solution-card{min-height:0;padding:24px}
+  .solution-card h3{margin-top:16px}
+  .solution-card p{margin-bottom:16px}
+  .solution-label{margin-top:0}
+  .voice-grid,.resource-editorial-grid,.journal-grid{gap:24px}
+  .voice-grid article{padding:24px}
+  .form-layout,.calculator-layout,.inquiry-choices,.editorial-list{padding-top:24px}
+  .detail-subnav{gap:8px;overflow-x:auto;justify-content:space-between}
+  .detail-subnav a{flex-shrink:0}
+  .section.article-body{padding-top:24px}
+  .site-footer{padding-block:40px 24px}
+  .renewal-cta,.detail-cta{padding-block:60px}
+}
+@media(max-width:480px){
+  .solution-card{display:grid;grid-template-columns:36px minmax(0,1fr) 20px;gap:10px 12px;align-items:start;padding:24px 20px}
+  .solution-card-top{display:contents}
+  .solution-card-top i{grid-column:1;grid-row:1;align-self:center}
+  .solution-card-top span{grid-column:3;grid-row:1;align-self:center}
+  .solution-card h3{grid-column:2;grid-row:1;margin:0;align-self:center}
+  .solution-card p{grid-column:2/4;grid-row:2;margin:0}
+  .solution-label{grid-column:2/4;grid-row:3;margin:2px 0 0}
+}
+/* Tablet layouts are intentional compositions, not a compressed desktop. */
+@media(min-width:761px) and (max-width:1100px){
+  .form-progress{display:flex;gap:24px;padding:0 0 12px;margin:0}
+  .form-progress li{flex:1;min-width:0;padding:16px 0}
+  .form-layout aside h2,.form-layout aside>p:last-child{display:none}
+  .form-layout form{padding:32px}
+  .journal-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .journal-card>div{padding:24px}
+  .journal-card img{height:auto;aspect-ratio:16/10}
+  .news-feature{gap:28px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .news-feature>img{height:auto;aspect-ratio:4/3}
+  .feature-grid{column-gap:28px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+  .steps h3{max-width:none}
+  .app-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+  .real-product img,.app-gallery img{height:360px;max-width:100%}
+  .footer-service-links{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(min-width:761px) and (max-width:1000px){
+  body>header{gap:16px}
+  body>header .nav-cta{margin-left:auto}
+  body>header .menu{display:block;width:44px;height:44px;padding:0;flex:none;border:0;background:none}
+  body>header nav{display:none;position:absolute;top:var(--header-height);left:0;right:0;margin:0;padding:20px 24px 28px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 20px 30px #073e2910;max-height:calc(100dvh - var(--header-height));overflow-y:auto}
+  body>header nav.open{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  body>header nav>a{width:100%;padding:16px 0;border-bottom:1px solid #eef3ee;min-height:52px}
+  body>header .mega{width:100%}
+  body>header .mega>summary{justify-content:space-between;min-height:52px}
+  body>header .mega-panel{position:static;grid-template-columns:repeat(3,minmax(0,1fr));padding:12px 0;margin:0;border:0;box-shadow:none;gap:8px;max-height:none}
+  body>header .mega-panel a{min-width:0;padding:16px 8px;align-items:flex-start}
+  .operations-story{grid-template-columns:1fr;gap:36px}
+  .operations-intro{max-width:680px}
+  .operations-panel{width:100%}
+  .policy-examples{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .choice-columns,.case-columns,.category-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .case-columns p{min-height:0}
+  .audience-comparison article{padding:28px}
+  .size-comparison{grid-template-columns:1fr;gap:20px}
+  .size-comparison article{display:grid;grid-template-columns:220px minmax(0,1fr);gap:0 32px;text-align:left;padding:28px}
+  .cabinet-graphic{grid-row:1/4;height:170px}
+  .size-comparison h3{margin:12px 0}
+  .process-rail{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px}
+}
+@media(min-width:761px) and (max-width:850px){
+  .renewal-hero{grid-template-columns:1fr;gap:40px;min-height:0}
+  .hero-product{width:100%;max-width:580px;justify-self:center;height:540px}
+  .detail-hero{grid-template-columns:1fr;gap:36px}
+  .detail-hero .lead{max-width:640px}
+  .detail-visual>img{height:auto;aspect-ratio:3/2}
+  .day-story-grid{grid-template-columns:1fr;gap:32px}
+  .day-story-visual{position:relative;top:auto}
+  .day-chapter>p{max-width:600px}
+  .news-feature,.resource-editorial-grid,.calculator-layout{grid-template-columns:1fr}
+  .news-feature>img{aspect-ratio:16/9}
+  .news-feature p{max-width:none}
+  .solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hub-heading,.section-heading{display:block}
+  .hub-heading>p,.section-heading>p{margin-top:24px;max-width:600px}
+}

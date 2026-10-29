@@ -1,0 +1,174 @@
+/* Final reading scale. Load after component styles.
+   Main / service / editorial / conversion headings have distinct roles.
+   Product screenshots retain the original artwork's typography. */
+:root{--type-ink:#142c1e;--type-copy:#4d6254;--type-meta:#5b7062;--type-body:16px;--type-caption:13px}
+html body{font-size:var(--type-body);line-height:1.75;letter-spacing:-.015em;color:var(--type-ink)}
+#main h1,#main h2,#main h3{word-break:keep-all;overflow-wrap:break-word}
+#main h1{font-size:48px;line-height:1.24;letter-spacing:-.045em;font-weight:800}
+#main .renewal-hero h1{font-size:64px;line-height:1.2;letter-spacing:-.05em}
+#main .detail-hero h1{font-size:56px;line-height:1.22;letter-spacing:-.045em}
+#main .page-intro h1{font-size:48px;line-height:1.28;letter-spacing:-.04em;max-width:1000px}
+#main h2,#main .special-heading h2,#main .operations-story h2,#main .renewal-cta h2,#main .detail-cta h2{font-size:44px;line-height:1.35;letter-spacing:-.04em;font-weight:750}
+#main h2 span{color:#5d7565}
+#main h3,#main .feature-grid h3,#main .choice-columns h3,#main .journal-card h3{font-size:24px;line-height:1.5;letter-spacing:-.025em;font-weight:700}
+#main p{font-size:16px;line-height:1.85;color:var(--type-copy);letter-spacing:-.015em}
+#main .lead,#main .detail-hero .lead,#main .page-intro .lead{font-size:18px;line-height:1.85;color:var(--type-copy)}
+#main .hero-description{font-size:22px;line-height:1.65;font-weight:600;color:#294b35;letter-spacing:-.025em}
+#main .hero-support,#main .story-introduction>p:last-child,#main .hub-heading>p,#main .operations-intro>p:not(.eyebrow),#main .day-chapter>p,#main .solution-card p,#main .voice-grid p,#main .journal-card p,#main .news-feature p,#main .special-heading>p:not(.eyebrow),#main .choice-columns p,#main .process-rail p,#main .special-scenario-selector p{font-size:16px;line-height:1.85}
+#main .eyebrow,#main .home-v2 .eyebrow,#main .special-section .eyebrow,#main .page-intro .eyebrow{font-size:13px;line-height:1.6;letter-spacing:.07em;font-weight:700;color:#3f6c4d}
+#main .detail-hero .eyebrow{font-size:15px;letter-spacing:0}
+#main .button,#main .text-link,html body.home-v2 .button,html body.home-v2 .text-link{font-size:15px;line-height:1.6;font-weight:700}
+#main .button{min-height:52px}
+#main .day-chapter{opacity:1}
+#main .chapter-control b{font-size:24px;line-height:1.5;letter-spacing:-.025em}
+#main .chapter-control>span{font-size:13px;line-height:1.6;letter-spacing:.04em;color:#277842}
+#main .day-chapter>a,#main .voice-grid a,#main .resource-stack b,#main .editorial-feature b{font-size:14px;line-height:1.7;color:#28643c}
+#main .hero-byline,#main .hero-ticket span,#main .hero-benefit span,#main .hero-gift span{font-size:13px;line-height:1.6;color:var(--type-meta)}
+#main .hero-ticket b,#main .hero-benefit b,#main .hero-gift b{font-size:15px;line-height:1.5}
+#main .hero-graphic-label,#main .hero-graphic-foot{font-size:12px;line-height:1.6;color:#3e6e47;letter-spacing:.06em}
+#main .hero-graphic-label b{font-size:16px}
+#main .proof-strip strong{font-size:34px;line-height:1.25}
+#main .proof-strip>div:first-child strong{font-size:18px;line-height:1.65}
+#main .proof-strip span,#main .proof-strip>p{font-size:13px;line-height:1.75;color:var(--type-meta)}
+#main .day-scene strong{font-size:30px;line-height:1.4}
+#main .day-scene small{font-size:13px;line-height:1.6;letter-spacing:.06em;color:#edf6ee}
+#main .operations-flow{font-size:14px;line-height:1.6;color:#d3e5d8}
+#main .operations-points p,#main .operations-points b{font-size:15px;line-height:1.65}
+#main .operations-points span,#main .admin-video>span{font-size:13px;line-height:1.7}
+#main .admin-video>span{color:#536d5c}
+#main .solution-tabs button{font-size:14px;line-height:1.6;color:#526557;min-height:48px}
+#main .solution-card-top i{color:#278a43}
+#main .solution-tabs button[aria-pressed=true]{color:#164c2a}
+#main .solution-tabs span{font-size:13px}
+#main .solution-card h3{font-size:22px;line-height:1.5}
+#main .solution-label{font-size:13px;line-height:1.65;color:#4f7055}
+#main .voice-category,#main .voice-grid article>div span{font-size:13px;line-height:1.7;color:#4d7056}
+#main .voice-grid article>div b{font-size:16px;line-height:1.6}
+#main .voice-grid h3{font-size:26px;line-height:1.6;letter-spacing:-.035em}
+#main .resource-stack span,#main .editorial-feature span{font-size:13px;line-height:1.65;letter-spacing:.06em}
+#main .editorial-feature h3{font-size:32px;line-height:1.4}
+#main .resource-stack h3{font-size:24px;line-height:1.5}
+#main .evidence-note,#main .source-note,#main .service-note,#main .prototype-note,#main .article-cover>figcaption,#main .article-source .source-note,#main .article-source .eyebrow{font-size:13px;line-height:1.8;color:var(--type-meta)}
+#main .article-source p{font-size:14px;line-height:1.85;color:var(--type-copy)}
+#main .article-body>p{font-size:17px;line-height:1.95}
+#main .article-body>p.source-note{font-size:13px;line-height:1.8}
+#main .article-body h2{font-size:30px;line-height:1.45}
+#main .news-feature h3{font-size:32px;line-height:1.4}
+#main .editorial-row:not(.news-feature) h3{font-size:26px;line-height:1.5}
+#main .editorial-row span,#main .editorial-row b,#main .news-feature>div>span,#main .journal-card span,#main .journal-card b{font-size:13px;line-height:1.75;color:#4e7158}
+#main .crumb{font-size:13px;line-height:1.6;color:var(--type-meta)}
+#main .visual-stamp{font-size:12px;line-height:1.7;letter-spacing:.04em}
+#main .visual-stamp b{font-size:15px;line-height:1.5}
+#main .detail-subnav{font-size:14px;line-height:1.6}
+#main .benefit-tags span,#main .feature-number,#main .choice-columns article>span,#main .category-mosaic span,#main .process-rail li>span{font-size:13px;line-height:1.65;color:#466c4c}
+#main .steps h3,#main .process-rail h3{font-size:20px;line-height:1.6}
+#main .choice-labels span{font-size:15px;line-height:1.6}
+#main .audience-comparison article>p{font-size:13px;line-height:1.65;color:#476e50}
+#main .audience-comparison h3{font-size:28px;line-height:1.5}
+#main .audience-comparison li{font-size:16px;line-height:1.8}
+#main .policy-examples article>div span{font-size:13px;line-height:1.65;color:#4f6d48}
+#main .policy-examples article>div b{font-size:24px;line-height:1.45}
+#main .policy-examples dl{font-size:15px;line-height:1.8}
+#main .policy-examples dt{color:#5a7053}
+#main .category-mosaic h3{font-size:20px;line-height:1.5}
+#main .service-statement p{font-size:23px;line-height:1.7}
+#main .size-comparison p{font-size:16px;line-height:1.8}
+#main .size-comparison small{font-size:13px;line-height:1.7;color:#5d7154}
+#main .case-columns p{font-size:24px;line-height:1.7}
+#main .case-columns b{font-size:16px;line-height:1.65}
+#main .case-columns span,#main .real-product figcaption{font-size:13px;line-height:1.7}
+#main .faq summary{font-size:16px;line-height:1.7}
+#main .faq details p{font-size:16px;line-height:1.85;color:var(--type-copy)}
+#main .inquiry-choices h2{font-size:34px;line-height:1.4}
+#main .inquiry-choices span,#main .form-layout aside>p:last-child{font-size:13px;line-height:1.8}
+#main .form-layout aside h2{font-size:30px;line-height:1.4}
+#main .form-step h3{font-size:26px;line-height:1.5}
+#main .form-progress li{font-size:14px;line-height:1.6}
+#main .service-options b{font-size:15px;line-height:1.6}
+#main .form-grid label,#main .calculator-layout label,#main .search-label{font-size:15px;line-height:1.6}
+#main .form-grid input,#main .form-grid textarea,#main .calculator-layout input,#main .calculator-layout select,#main .search-label input{font-size:16px;line-height:1.6}
+#main .form-grid input::placeholder,#main .form-grid textarea::placeholder,#main .search-label input::placeholder{color:#64776a;opacity:1}
+#main .check,#main #selected-summary,#main #form-error{font-size:14px;line-height:1.8}
+#main .complete-state h2,#main .calculator-layout h2{font-size:32px;line-height:1.4}
+#main .history-list p{font-size:16px;line-height:1.85}
+/* Preserve contrast on dark surfaces after the generic copy rules above. */
+#main .operations-story p,#main .operations-points span{color:#c4dacb}
+#main .operations-story .eyebrow{color:#ade6b7}
+#main .operations-story h2 span{color:#b6d7be}
+#main .service-cases p,#main .service-cases .case-columns span{color:#d0e3d0}
+#main .service-cases .eyebrow,#main .service-cases .evidence-note{color:#b8d2b8}
+#main .editorial-feature p,#main .editorial-feature b{color:#edf5ed}
+#main .editorial-feature span{color:#d0ebd3}
+#main .detail-cta .eyebrow{color:#bce6c6}
+#main .special-learning .service-statement p,#main .special-operation .service-statement p,#main .special-support .service-statement p{color:#edf5eb}
+#main .special-comparison .choice-columns article:last-child p{color:#d3e5d0}
+html body>header nav{font-size:15px;line-height:1.6}
+html body>header .nav-cta{font-size:14px;line-height:1.6}
+html body>header .mega>summary{font-size:15px}
+html body>header .mega-panel b{font-size:15px;line-height:1.55}
+html body>header .mega-panel small{font-size:13px;line-height:1.65;color:#536b5b}
+html body .site-footer p,html body .site-footer>div:nth-child(2)>a{font-size:15px;line-height:1.8}
+html body .site-footer>div:nth-child(2)>span,html body .footer-service-links,html body .footer-links a,html body .footer-bottom,html body .footer-bottom button{font-size:13px!important;line-height:1.8;color:#506a58}
+@media(max-width:1120px) and (min-width:761px){
+  #main .renewal-hero h1{font-size:48px}
+  #main .detail-hero h1{font-size:44px}
+  #main .page-intro h1{font-size:42px}
+  #main h2,#main .special-heading h2,#main .operations-story h2,#main .renewal-cta h2,#main .detail-cta h2{font-size:36px}
+  #main .solution-card h3{font-size:21px}
+}
+@media(max-width:760px){
+  #main h1,#main .page-intro h1{font-size:34px;line-height:1.3;letter-spacing:-.035em}
+  #main .renewal-hero h1{font-size:38px;line-height:1.25;letter-spacing:-.04em}
+  #main .detail-hero h1{font-size:36px;line-height:1.25;letter-spacing:-.035em}
+  body:has(.article-body) #main .page-intro h1{font-size:32px;line-height:1.4;max-width:100%}
+  #main h2,#main .special-heading h2,#main .operations-story h2,#main .renewal-cta h2,#main .detail-cta h2{font-size:30px;line-height:1.4;letter-spacing:-.035em}
+  #main h3,#main .feature-grid h3,#main .choice-columns h3,#main .journal-card h3,#main .chapter-control b,#main .resource-stack h3,#main .editorial-row:not(.news-feature) h3{font-size:22px;line-height:1.5}
+  #main p,#main .hero-support,#main .story-introduction>p:last-child,#main .hub-heading>p,#main .operations-intro>p:not(.eyebrow),#main .day-chapter>p,#main .special-heading>p:not(.eyebrow),#main .choice-columns p,#main .process-rail p,#main .special-scenario-selector p,#main .history-list p,#main .faq details p{font-size:16px;line-height:1.85}
+  #main .lead,#main .detail-hero .lead,#main .page-intro .lead{font-size:16px;line-height:1.85}
+  #main .hero-description{font-size:20px;line-height:1.7}
+  #main .solution-card p,#main .voice-grid p,#main .journal-card p,#main .news-feature p{font-size:15px;line-height:1.8}
+  #main .solution-card h3{font-size:20px;line-height:1.5}
+  #main .button,#main .text-link,html body.home-v2 .button,html body.home-v2 .text-link,#main .calculator-layout .button{font-size:14px;line-height:1.6}
+  #main .hero-byline{flex-wrap:wrap;gap:10px;font-size:13px}
+  #main .hero-ticket span,#main .hero-benefit span,#main .hero-gift span{font-size:13px}
+  #main .hero-ticket b,#main .hero-benefit b,#main .hero-gift b{font-size:14px}
+  #main .hero-graphic-label,#main .hero-graphic-foot{font-size:12px;letter-spacing:.025em}
+  #main .hero-graphic-foot{max-width:180px;text-align:right;line-height:1.5}
+  #main .proof-strip strong{font-size:28px}
+  #main .proof-strip span,#main .proof-strip>p{font-size:13px}
+  #main .day-scene strong{font-size:26px}
+  #main .operations-flow{font-size:13px;gap:8px;flex-wrap:wrap}
+  #main .operations-points p,#main .operations-points b{font-size:14px}
+  #main .operations-points span{font-size:13px}
+  #main .solution-tabs button{font-size:14px}
+  #main .solution-tabs button[aria-pressed=true]{color:#fff}
+  #main .voice-grid h3{font-size:22px;line-height:1.6}
+  #main .voice-grid article>div b{font-size:15px}
+  #main .editorial-feature h3,#main .news-feature h3{font-size:26px;line-height:1.45}
+  #main .detail-subnav{font-size:13px;line-height:1.6}
+  #main .steps h3,#main .process-rail h3{font-size:18px;line-height:1.65}
+  #main .audience-comparison h3{font-size:24px;line-height:1.5}
+  #main .audience-comparison li{font-size:16px}
+  #main .category-mosaic h3{font-size:18px;line-height:1.6}
+  #main .service-statement p{font-size:20px;line-height:1.75}
+  #main .case-columns p{font-size:22px;line-height:1.7}
+  #main .article-body>p{font-size:16px;line-height:1.95}
+  #main .article-body h2{font-size:26px;line-height:1.45}
+  #main .inquiry-choices h2,#main .complete-state h2,#main .calculator-layout h2{font-size:28px;line-height:1.45}
+  #main .form-step h3{font-size:22px;line-height:1.5}
+  #main .form-progress li{font-size:13px;line-height:1.7}
+  #main .service-options b,#main .form-grid label,#main .calculator-layout label{font-size:15px}
+  #main .check,#main #selected-summary,#main #form-error{font-size:14px}
+  #main .eyebrow,#main .special-section .eyebrow,#main .page-intro .eyebrow,#main .evidence-note,#main .source-note,#main .service-note,#main .prototype-note,#main .article-cover>figcaption,#main .article-source .source-note,#main .article-source .eyebrow{font-size:13px;line-height:1.8}
+  #main .article-source p{font-size:14px}
+  #main .article-body>p.source-note{font-size:13px}
+  html body>header .nav-cta{font-size:13px}
+  html body>header .mega-panel b{font-size:14px}
+  html body>header .mega-panel small{font-size:13px;line-height:1.6}
+}
+/* Korean labels use natural spacing rather than uppercase tracking. */
+body .eyebrow,#main .eyebrow,.cost-kicker{letter-spacing:0!important;word-break:keep-all}
+.home-v2 .hero-byline span:first-child,.home-v2 .hero-graphic-label,.home-v2 .hero-graphic-label b{letter-spacing:0}
+.home-v2 .proof-strip>div:last-of-type strong{font-size:24px;line-height:1.4;word-break:keep-all}
+.home-v2 .cta-outline{display:none}
+@media(max-width:760px){.home-v2 .proof-strip>div:last-of-type strong{font-size:20px}}
