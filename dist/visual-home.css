@@ -1,0 +1,43 @@
+/* Image-led introduction: official photography and unmodified product capture. */
+.benefit-gallery{padding:88px var(--content-edge);background:#f5f6f5}
+.benefit-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.benefit-gallery-grid>a{color:#202720;text-decoration:none;min-width:0}
+.benefit-image{aspect-ratio:1.1;overflow:hidden;border-radius:8px;background:#fff}
+.benefit-image img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.benefit-gallery-grid a:hover img{transform:scale(1.035)}
+.benefit-gallery-grid>a>span{display:block;font-size:14px;margin-top:22px;color:#616861}
+.benefit-gallery-grid h3{font-size:23px;line-height:1.5;margin:8px 0 0;display:flex;justify-content:space-between;gap:12px}
+.buyer-admin{display:flex;flex-direction:column;justify-content:center;padding:24px;aspect-ratio:auto;min-height:360px}
+.buyer-admin video{display:block;width:100%;aspect-ratio:16/9;background:#eef0ee}
+.buyer-admin .admin-video>span{color:#616861;font-size:13px;display:block;margin:12px 0}
+.visual-process{display:flex;gap:16px;align-items:center;justify-content:center;font-size:15px;margin-top:16px;color:#202720}
+@media(max-width:760px){.benefit-gallery{padding-block:56px}.benefit-gallery-grid{grid-template-columns:1fr;gap:32px}.benefit-image{aspect-ratio:1.45}.benefit-gallery-grid h3{font-size:22px}.buyer-admin{min-height:0;padding:14px}.visual-process{gap:10px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){.benefit-image img{transition:none}.benefit-gallery-grid a:hover img{transform:none}}
+.home-v2{color:#202720;background:#fff}
+.home-v2 .eyebrow,.home-v2 .hero-description,.home-v2 .hub-heading>p{color:#616861}
+.home-v2 h2 span{color:#202720}
+.home-v2 .voices-section,.home-v2 .renewal-cta{background:#f5f6f5}
+.home-v2 .operations-story{background:#f5f6f5;color:#202720}
+.home-v2 .operations-story h2,.home-v2 .operations-story h2 span,.home-v2 .operations-points b{color:#202720}
+.home-v2 .operations-intro>p,.home-v2 .operations-points span,.home-v2 .operations-flow{color:#616861}
+.home-v2 .operations-flow span{background:#fff;border:1px solid #e3e6e3}
+.home-v2 .operations-points{border-color:#dfe3df}
+.home-v2 .button.light,.home-v2 .button.dark{background:#159447;color:#fff}
+.home-v2 .cta-outline{display:none}
+.home-v2 .solution-card:hover{background:#f5f6f5}
+.home-v2 .solution-card-top i{color:#159447}
+.home-v2 .renewal-cta{min-height:0;padding-block:72px}
+.home-v2 .renewal-hero{grid-template-columns:.9fr 1.1fr;gap:48px;min-height:640px;padding-top:48px;padding-bottom:64px}
+.home-v2 .renewal-hero h1{font-size:clamp(42px,4.3vw,64px);line-height:1.2;margin:26px 0}
+.home-v2 .hero-description{font-size:19px;line-height:1.7;font-weight:400}
+.visual-hero{position:relative;height:530px;border-radius:24px;background:#edf4ee;margin-left:15px;isolation:isolate}
+.visual-hero-photo{width:100%;height:100%;object-fit:cover;border-radius:24px}
+.visual-app{position:absolute;bottom:24px;left:-32px;width:176px;padding:9px 9px 13px;border-radius:23px;background:#fff;box-shadow:0 12px 38px #173c2826}
+.visual-app img{width:100%;height:280px;object-fit:contain;display:block}
+.visual-app span{display:block;font-size:11px;text-align:center;margin-top:8px;color:#365640}
+.home-v2 .story-introduction>p:last-child{display:none}
+.home-v2 .day-chapter>p{max-width:32em}
+.home-v2 .operations-story{gap:56px}
+.home-v2 .solution-hub .hub-heading>p{max-width:29em}
+@media(max-width:1000px){.home-v2 .renewal-hero{gap:32px}.visual-hero{height:450px}.visual-app{width:145px;left:-20px}.visual-app img{height:230px}}
+@media(max-width:760px){.home-v2 .renewal-hero{grid-template-columns:1fr;gap:30px;padding-top:32px;padding-bottom:48px}.home-v2 .renewal-hero h1{font-size:40px}.home-v2 .hero-description{font-size:17px}.visual-hero{height:360px;margin-left:0;margin-bottom:8px}.visual-app{left:14px;bottom:14px;width:120px;border-radius:16px;padding:6px}.visual-app img{height:200px}.visual-app span{font-size:10px}.home-v2 .operations-story{gap:32px}}
